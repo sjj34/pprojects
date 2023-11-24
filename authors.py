@@ -4,6 +4,7 @@ class Book:
         self.author = author
         self.price = price
 class Library:
+    ## 2nd commit
     def __init__(self):
         self.books = []
         self.books.append(Book("A Tale of Two Cities", "Charles Dickens", 191.99))
