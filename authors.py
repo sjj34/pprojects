@@ -4,7 +4,7 @@ class Book:
         self.author = author
         self.price = price
 class Library:
-    ## 2nd commit
+    ## 3rd commit
     def __init__(self):
         self.books = []
         self.books.append(Book("A Tale of Two Cities", "Charles Dickens", 191.99))
@@ -69,7 +69,7 @@ def main():
                 price = float(input("Enter price: "))
             except ValueError:
                 print("Invalid price format. Please enter a valid number.")
-                price = float(input("Enter price: "))
+                
 
             new_book = Book(title, author, price)
             library.add_book(new_book)
@@ -82,7 +82,7 @@ def main():
                 new_price = float(new_price)
             except ValueError:
                 print("Invalid price format. Please enter a valid number.")
-                new_price = input("Enter new price (press Enter to keep current price): ")
+
 
             new_price = input("Enter new price (press Enter to keep current price): ")
             library.update_book(title, new_title, new_author, new_price)
